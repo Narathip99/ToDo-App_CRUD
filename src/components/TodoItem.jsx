@@ -13,7 +13,7 @@ export const TodoItem = ({ todo, deleteTodo, toggleComplete, editTodo }) => {
           />
 
           {todo.isCompleted ? (
-            <p className="text-xl font-medium line-through">Completed</p>
+            <p className="text-xl font-medium line-through">{todo.text}</p>
           ) : (
             <p className="text-xl font-medium">{todo.text}</p>
           )}
