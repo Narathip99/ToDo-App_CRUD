@@ -57,6 +57,10 @@ export default function App() {
   const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   }
+
+  const deleteAllTodo = () => {
+    confirm("Are you sure you want to delete all todos?") && setTodos([])
+  }
   
   const toggleComplete = (id) => {
     setTodos(todos.map((todo) => todo.id === id ? {...todo, isCompleted: !todo.isCompleted} : todo))
@@ -75,7 +79,7 @@ export default function App() {
         </span>
       </h1>
       <AddTodo newTodo={newTodo} setNewTodo={setNewTodo} addTodo={addTodo} editId={editId} setEditId={setEditId} />
-      <DisplayTodo todos={todos} deleteTodo={deleteTodo} toggleComplete={toggleComplete} editTodo={editTodo} />
+      <DisplayTodo todos={todos} deleteTodo={deleteTodo} toggleComplete={toggleComplete} editTodo={editTodo} deleteAllTodo={deleteAllTodo} />
     </main>
   );
 }
