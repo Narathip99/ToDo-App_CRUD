@@ -68,7 +68,7 @@ export default function App() {
   }
 
   return (
-    <main className="bg-gray-200 min-h-screen p-4">
+    <main className="bg-gray-200 min-h-screen p-4 max-w-md mx-auto">
       <h1 className="text-4xl font-bold my-4">
         <span className="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
           Todo App
