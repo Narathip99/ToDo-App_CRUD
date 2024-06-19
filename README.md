@@ -20,8 +20,8 @@ This Todo-App is created to practice and learn CRUD (Create, Read, Update, Delet
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/uNarathip99/ToDo-App_CRUD.git
-    cd ToDo-App_CRUD
+    git clone https://github.com/uNarathip99/Todo-App.git
+    cd Todo-App
     ```
 
 2. Install dependencies:
